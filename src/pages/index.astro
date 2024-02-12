@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Button from '../components/Button.astro';
+import Button_Outline from '../components/Button_Outline.astro';
 import Carrusel from '../components/Carrusel.astro'
 import Header from '../components/Header.astro'
 ---
@@ -10,30 +11,35 @@ import Header from '../components/Header.astro'
 	<main>
 		<Header/>
 		
-		<center>
+		<div class="content-buttons">
+			<Button_Outline title="Donate" href="https://ko-fi.com/mixdor"/>
 			<Button title="Download" href="https://sourceforge.net/projects/circuitikz-generator/"/>
-		</center>
+		</div>
 		<p>This software is a tool for designing electronic circuits using LaTeX. With an intuitive graphical interface, you can create complex circuits quickly and easily, while the LaTeX code generator translates your designs into code compatible with the LaTeX circuitikz library.</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/circuitikz-generator.github.io/components"
 				title="Components"
 				body="Resistors, Capacitors, Diodes, Transistors, Transformers, etc."
+				target=""
 			/>
 			<Card
 				href="/circuitikz-generator.github.io/shortcuts"
 				title="Shortcuts"
 				body="List of integrated keyboard shortcuts."
+				target=""
 			/>
 			<Card
 				href="/circuitikz-generator.github.io/instructions"
 				title="Instructions"
 				body="Basic instructions for use."
+				target=""
 			/>
 			<Card
 				href="https://github.com/Mixdor/CircuiTikZ-Generator"
 				title="Source"
 				body="Open source code, review or modify what you need."
+				target="_blank"
 			/>
 		</ul>
 		
@@ -59,6 +65,14 @@ import Header from '../components/Header.astro'
 		margin-bottom: 3rem;
 		text-align: center;
 	}
+
+	.content-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 3rem;
+	}
+
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
