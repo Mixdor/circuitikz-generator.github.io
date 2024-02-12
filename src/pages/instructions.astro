@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+---
+
+<Layout title="Instructions - Electronic circuit builder for latex" description="Tool open source to build electronic circuits in LaTeX, compatible with CircuiTikZ library">
+	<main>
+		<Header/>
+		
+		<div id="basic">
+			<div>
+				<img src="/Icons/traceable32.svg" alt="Traceable components logo">
+				<h4>Traceable</h4>
+				<p>To place a traceable component in your workspace, simply follow these steps:</p>
+				<ol>
+					<li>Click on the desired component.</li>
+					<li>Hold down the mouse button.</li>
+					<li>Drag the component to the new position.</li>
+					<li>Finally, release the mouse button at the desired position.</li>
+				</ol>
+				<p>This functionality allows you to create visual connections between positions by dragging the component from its original location to the new one, and the desired component will be created in the center.</p>
+			</div>
+			<div>
+				<img id="img_no_traceable" src="/Icons/no_traceable32.svg" alt="Non-traceable components logo">
+				<h4>No Traceable</h4>
+				<p>These components are placed directly at the position where you click, without the need to drag. Follow these simple steps:</p>
+				<ol>
+					<li>Click on the component you want to place.</li>
+					<li>It will be instantly positioned at the click location, without the need to drag.</li>
+				</ol>
+			</div>
+			
+		</div>
+		
+	</main>
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h4 {
+		color: rgb(var(--accent-light));
+		margin-top: 0;
+	}
+	img {
+
+	}
+	p {
+		font-size: 90%;
+	}
+	li {
+		font-size: 90%;
+	}
+	#basic {
+		margin-top: 4rem;
+	}
+	#img_no_traceable {
+		margin-top: 2rem;
+	}
+</style>

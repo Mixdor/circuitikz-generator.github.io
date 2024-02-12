@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
+import Carrusel from '../components/Carrusel.astro'
+import Header from '../components/Header.astro'
+---
+
+<Layout title="CircuiTikZ Generator - Electronic circuit builder for latex" description="Tool open source to build electronic circuits in LaTeX, compatible with CircuiTikZ library.">
+	<main>
+		<Header/>
+		
+		<center>
+			<Button title="Download" href="https://sourceforge.net/projects/circuitikz-generator/"/>
+		</center>
+		<p>This software is a tool for designing electronic circuits using LaTeX. With an intuitive graphical interface, you can create complex circuits quickly and easily, while the LaTeX code generator translates your designs into code compatible with the LaTeX circuitikz library.</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/components"
+				title="Components"
+				body="Resistors, Capacitors, Diodes, Transistors, Transformers, etc."
+			/>
+			<Card
+				href="/shortcuts"
+				title="Shortcuts"
+				body="List of integrated keyboard shortcuts."
+			/>
+			<Card
+				href="/instructions"
+				title="Instructions"
+				body="Basic instructions for use."
+			/>
+			<Card
+				href="https://github.com/Mixdor/CircuiTikZ-Generator"
+				title="Source"
+				body="Open source code, review or modify what you need."
+			/>
+		</ul>
+		
+		<Carrusel
+			srcs={["/Screenshots/screenshot2.webp","/Screenshots/screenshot3.webp","/Screenshots/screenshot4.webp","/Screenshots/screenshot5.webp"]}
+			alt="Screenshot"
+		/>
+	</main>
+	
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	p {
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+
+</style>

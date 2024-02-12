@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="32"
+   viewBox="0 -960 1280 1280"
+   width="32"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="traceable32.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="11.020833"
+     inkscape:cx="5.1720228"
+     inkscape:cy="13.928167"
+     inkscape:window-width="1366"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 116.36364,29.09091 q -48.000004,0 -82.181822,-34.18182 Q 0,-39.27273 0,-87.27273 q 0,-48 34.181818,-82.18182 34.181818,-34.18182 82.181822,-34.18182 h 15.27272 q 6.54546,0 13.81818,2.9091 l 264.72728,-264.72728 q -2.9091,-7.27272 -2.9091,-13.81818 v -15.27272 q 0,-48 34.18182,-82.18182 34.18182,-34.18182 82.18182,-34.18182 48,0 82.18182,34.18182 Q 640,-542.54545 640,-494.54545 q 0,2.90908 -2.9091,29.0909 l 148.36364,148.36364 q 7.27274,-2.9091 13.81818,-2.9091 h 30.54546 q 6.54546,0 13.81818,2.9091 l 206.54544,-206.54546 q -2.9091,-7.27272 -2.9091,-13.81818 v -15.27272 q 0,-48 34.1818,-82.18182 34.1819,-34.18182 82.1819,-34.18182 48,0 82.1818,34.18182 34.1818,34.18182 34.1818,82.18182 0,48 -34.1818,82.18182 -34.1818,34.18182 -82.1818,34.18182 h -15.2728 q -6.5454,0 -13.8181,-2.9091 L 928,-232.72727 q 2.9091,7.27272 2.9091,13.81818 v 15.27272 q 0,48 -34.18182,82.18182 -34.18182,34.18182 -82.18182,34.18182 -48,0 -82.18182,-34.18182 -34.18182,-34.18182 -34.18182,-82.18182 v -15.27272 q 0,-6.54546 2.90908,-13.81818 L 552.72728,-381.09091 q -7.27274,2.9091 -13.81818,2.9091 h -15.27274 q -2.90908,0 -29.0909,-2.9091 l -264.72728,264.72728 q 2.9091,7.27272 2.9091,13.81818 v 15.27272 q 0,48 -34.18182,82.18182 -34.18182,34.18182 -82.18182,34.18182 z"
+     id="path2"
+     style="fill:#ffc89f;fill-opacity:1;stroke-width:1.45455" />
+</svg>

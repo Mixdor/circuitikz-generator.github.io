@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+---
+
+<Layout title="Components - Electronic circuit builder for latex" description="Tool open source to build electronic circuits in LaTeX, compatible with CircuiTikZ library">
+	<main>
+		<Header/>
+
+		<div id="basic">
+			<h5><img src="/Icons/traceable.svg" alt="Traceable components logo"> = Traceable</h5>
+			<h5><img src="/Icons/no_traceable.svg" alt="Non-traceable components logo"> = No Traceable</h5>
+		</div>
+		
+
+		<div class="instructions">
+			<h2 class="category">Basic <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Wire</li>
+				<li class="traceable">Crossing Wire</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Terminal Shapes <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Connected</li>
+				<li class="traceable">Unconnected</li>
+				<li class="traceable">Unconnected</li>
+				<li class="traceable">Diamond</li>
+				<li class="traceable">Open Diamond</li>
+				<li class="traceable">Square</li>
+				<li class="traceable">Open Square</li>
+				<li class="traceable">Arrow</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Sources<span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Battery</li>
+				<li class="traceable">Battery 1</li>
+				<li class="traceable">Battery 2</li>
+				<li class="traceable">DC Voltage</li>
+				<li class="traceable">DC Current</li>
+				<li class="traceable">AC Voltage</li>
+				<li class="traceable">AC Current</li>
+				<li class="traceable">DC Controlled Voltage</li>
+				<li class="traceable">DC Controlled Current</li>
+				<li class="traceable">AC Controlled Voltage</li>
+				<li class="traceable">AC Controlled Current</li>
+				<li class="traceable">Square Voltage</li>
+				<li class="traceable">Triangle Voltage</li>
+			</ul>
+		</div>
+		
+		<div class="instructions">
+			<h2 class="category">Resistors <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Resistor</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Inductors <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Inductor</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Capacitors <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Capacitor</li>
+				<li class="traceable">Polarized Capacitor</li>
+				<li class="traceable">Electrolytic Capacitor</li>
+				<li class="traceable">Piezoelectric</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Diodes <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Diode</li>
+				<li class="traceable">Schottky Diode</li>
+				<li class="traceable">Zener Diode</li>
+				<li class="traceable">ZZener Diode</li>
+				<li class="traceable">Tunnel Diode</li>
+				<li class="traceable">Photodiode</li>
+				<li class="traceable">Led</li>
+				<li class="traceable">Laser Diode</li>
+				<li class="traceable">Varcap</li>
+				<li class="traceable">Shockley Diode</li>
+				<li class="traceable">Bidirectional Diode</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Switches <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Switch</li>
+				<li class="traceable">Closing Switch</li>
+				<li class="traceable">Opening Switch</li>
+				<li class="traceable">Push Button</li>
+				<li class="traceable">Push Closed</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Transistors <span>&rarr;</span></h2>
+			<ul>
+				<li class="notraceable">NPN</li>
+				<li class="notraceable">PNP</li>
+				<li class="notraceable">Schottky NPN</li>
+				<li class="notraceable">Schottky PNP</li>
+				<li class="notraceable">Diode NPN</li>
+				<li class="notraceable">Diode PNP</li>
+				<li class="notraceable">Photo NPN</li>
+				<li class="notraceable">Photo PNP</li>
+				<li class="notraceable">Nigbt</li>
+				<li class="notraceable">Pigbt</li>
+				<li class="notraceable">NMOS</li>
+				<li class="notraceable">PMOS</li>
+				<li class="notraceable">NMOS Depletion</li>
+				<li class="notraceable">PMOS Depletion</li>
+				<li class="notraceable">Hemt</li>
+				<li class="notraceable">Hemt NoBase</li>
+				<li class="notraceable">NFET</li>
+				<li class="notraceable">PFET</li>
+				<li class="notraceable">NFET Depletion</li>
+				<li class="notraceable">PFET Depletion</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Grounds <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Ground</li>
+				<li class="traceable">Tailless</li>
+				<li class="traceable">Reference</li>
+				<li class="traceable">Signal</li>
+				<li class="traceable">Noiseless</li>
+				<li class="traceable">Protective</li>
+				<li class="traceable">Chassis</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Power Supplies <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">VCC</li>
+				<li class="traceable">VEE</li>
+			</ul>
+		</div>
+		
+		<div class="instructions">
+			<h2 class="category">Transformers <span>&rarr;</span></h2>
+			<ul>
+				<li class="notraceable">Transformer</li>
+				<li class="notraceable">Gyrator</li>
+				<li class="notraceable">Transformer Core</li>
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<h2 class="category">Instruments <span>&rarr;</span></h2>
+			<ul>
+				<li class="traceable">Ammeter</li>
+				<li class="traceable">Voltmeter</li>
+				<li class="traceable">Ohmmeter</li>
+			</ul>
+		</div>
+
+	</main>
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+	h5 {
+		text-align: left;
+	}
+	.category {
+		margin: 0rem 0rem 0.5rem 0rem;
+		font-size: 110%;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	.shortcut {
+		color: black;
+		font-size: 80%;
+		font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
+		background-color: #fff;
+		border: 1px solid #a6a6a6;
+		border-radius: 4px;
+		box-shadow: 0 2px grey;
+		padding: 2.4px 6px;
+		margin: auto 0;
+	}
+	.instructions {
+		margin-top: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background-color: #23262d;
+		padding: 1.5rem 2rem 1.5rem 2rem;
+		border-radius: 8px;
+	}
+	.instructions li {
+		margin-left: 1.7rem;
+		font-size: 90%;
+	}
+	.traceable {
+	    list-style-image: url(/Icons/traceable.svg);
+	}
+	.notraceable {
+	    list-style-image: url(/Icons/no_traceable.svg);
+	}
+	.instructions:is(:hover, :focus-within) {
+		border-color: rgb(var(--accent-light));
+	}
+	.instructions:is(:hover, :focus-within) h2 {
+		color: rgb(var(--accent-light));
+	}
+	#basic {
+		margin-top: 4rem;
+	}
+</style>

@@ -1,0 +1,54 @@
+---
+interface Props {
+	title : string;
+	description : string
+}
+
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta name="description" content={description}/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg" href="/araña.svg" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 229, 114, 58;
+		--accent-button: 240, 150, 113;
+		--accent-light: 255, 200, 159;
+		--accent-dark: 107, 29, 0;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>
