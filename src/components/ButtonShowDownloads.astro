@@ -1,16 +1,14 @@
 ---
 interface Props {
 	title: string;
-	target: string;
-	href: string;
 }
 
-const { title, target, href } = Astro.props;
+const { title } = Astro.props;
 ---
 
-<a class="button button-white" target={target} href={href}>
+<button id="btnShowDow" class="button button-white" onclick="toggleDownloads()">
 	<h3>{title}</h3>
-</a>
+</button>
 
 <style>
 	.link-button {
@@ -31,6 +29,7 @@ const { title, target, href } = Astro.props;
 	  align-items: center;
 	  justify-content: center;
 	  gap: 1rem;
+	  cursor: pointer;
 	  border-radius: 9999px;
 	  border-width: 1px;
 	  padding-left: 2.5rem;
@@ -72,3 +71,14 @@ const { title, target, href } = Astro.props;
 	}
 
 </style>
+
+<script client:load>
+  	
+  	function toggleDownloads() {
+
+    	const div = document.getElementById("options_downloads");
+    	div.classList.toggle("show");
+
+    	document.getElementById("btnShowDow").style.display = "none"
+	}
+</script>

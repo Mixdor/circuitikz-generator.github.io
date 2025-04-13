@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="184.24001"
+   height="184.24001"
+   version="1.1"
+   viewBox="0 0 48.746221 48.746"
+   id="svg11"
+   sodipodi:docname="windows_11.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.4410551"
+     inkscape:cx="60.025463"
+     inkscape:cy="111.37673"
+     inkscape:window-width="1151"
+     inkscape:window-height="739"
+     inkscape:window-x="-2"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg11" />
+  <defs
+     id="defs11" />
+  <g
+     transform="matrix(0.78907194,0,0,0.78907194,219.15355,-12.675901)"
+     fill="#0078d4"
+     id="g11">
+    <rect
+       x="-271.22"
+       y="22.579"
+       width="23.105"
+       height="23.105"
+       id="rect8" />
+    <rect
+       x="-245.58"
+       y="22.579"
+       width="23.105"
+       height="23.105"
+       id="rect9" />
+    <rect
+       x="-271.22"
+       y="48.221001"
+       width="23.105"
+       height="23.105"
+       id="rect10" />
+    <rect
+       x="-245.58"
+       y="48.221001"
+       width="23.105"
+       height="23.105"
+       id="rect11" />
+  </g>
+</svg>

@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Button from '../components/Button.astro';
+import ButtonShowDownload from '../components/ButtonShowDownloads.astro';
+import ButtonDownload from '../components/ButtonDownload.astro';
 import Button_Outline from '../components/Button_Outline.astro';
 import Carrusel from '../components/Carrusel.astro'
 import Header from '../components/Header.astro'
@@ -12,9 +14,32 @@ import Header from '../components/Header.astro'
 		<Header/>
 		
 		<div class="content-buttons">
-			<Button_Outline title="Donate" href="https://ko-fi.com/mixdor"/>
-			<Button title="Download" href="https://sourceforge.net/projects/circuitikz-generator/"/>
+			<Button_Outline title="Donate" href="https://github.com/sponsors/Mixdor"/>
+			<!--<Button title="Download" target="_blank" href="https://sourceforge.net/projects/circuitikz-generator/"/> -->
+			<ButtonShowDownload title="Download" />
 		</div>
+
+		<div id="options_downloads" class="content-downloads">
+			
+			<p id="text_download">Download Options (v0.8):</p>
+
+			<ul role="list" class="flex_content_download">
+				<ButtonDownload
+					title="Windows"
+					href="https://sourceforge.net/projects/circuitikz-generator/files/v0.8/Circuitikz-Generator-x86_64.exe/download"
+					logo="/icons/windows_11.svg"/>
+				<ButtonDownload
+					title="AppImage"
+					href="https://sourceforge.net/projects/circuitikz-generator/files/v0.8/Circuitikz_Generator-x86_64.AppImage/download"
+					logo="/icons/app_image.svg"/>
+				<ButtonDownload
+					title="Debian"
+					href="https://sourceforge.net/projects/circuitikz-generator/files/v0.8/Circuitikz-Generator-x86_64.deb/download"
+					logo="/icons/debian.svg"/>
+			</ul>
+
+		</div>
+
 		<p>This software is a tool for designing electronic circuits using LaTeX. With an intuitive graphical interface, you can create complex circuits quickly and easily, while the LaTeX code generator translates your designs into code compatible with the LaTeX circuitikz library.</p>
 
 		<!-- Begin SF Tag -->
@@ -54,7 +79,7 @@ import Header from '../components/Header.astro'
 				target=""
 			/>
 			<Card
-				href="/CircuiTikZ-Generator"
+				href="https://github.com/Mixdor/CircuiTikZ-Generator"
 				title="Source"
 				body="Open source code, review or modify what you need."
 				target="_blank"
@@ -88,7 +113,7 @@ import Header from '../components/Header.astro'
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 3rem;
+		margin: 3rem 3rem 0 3rem;
 	}
 
 	.instructions {
@@ -109,6 +134,14 @@ import Header from '../components/Header.astro'
 	.instructions strong {
 		color: rgb(var(--accent-light));
 	}
+	.flex_content_download{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		gap: 1rem;
+	}
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
@@ -120,5 +153,18 @@ import Header from '../components/Header.astro'
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	#text_download{
+		margin-bottom: 1rem;
+	}
 
+	#options_downloads{
+		overflow: hidden;
+    	transition: max-height 0.5s ease, opacity 0.5s ease;
+    	max-height: 0;
+    	opacity: 0;
+	}
+	#options_downloads.show{
+		max-height: 500px;
+    	opacity: 1;
+	}
 </style>
