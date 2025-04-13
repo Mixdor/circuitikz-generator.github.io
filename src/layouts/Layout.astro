@@ -2,10 +2,12 @@
 interface Props {
 	title : string;
 	description : string
+	canononical : string
 }
 
 const { title } = Astro.props;
 const { description } = Astro.props;
+const { canononical } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,6 +18,7 @@ const { description } = Astro.props;
 		<meta name="description" content={description}/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg" href="/araña.svg" />
+		<link rel="canonical" href={canononical} />
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8075059212388269" crossorigin="anonymous"></script>
 	</head>
 	<body>
