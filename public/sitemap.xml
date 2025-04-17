@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator https://sitemap-generator.org/ -->
   <url>
-    <loc>https://www.circuitikz-generator.xyz/</loc>
-    <lastmod>2025-04-13T17:39:04+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
+   <loc>https://www.circuitikz-generator.xyz/</loc>
+   <lastmod>2025-04-17T05:55:11.509Z</lastmod>
+   <priority>1.00</priority>
+ </url>
   <url>
-    <loc>https://www.circuitikz-generator.xyz/components/</loc>
-    <lastmod>2025-04-13T17:39:04+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+   <loc>https://www.circuitikz-generator.xyz/components/</loc>
+   <lastmod>2025-04-17T05:55:11.510Z</lastmod>
+   <priority>0.80</priority>
+ </url>
   <url>
-    <loc>https://www.circuitikz-generator.xyz/shortcuts/</loc>
-    <lastmod>2025-04-13T17:39:04+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+   <loc>https://www.circuitikz-generator.xyz/shortcuts/</loc>
+   <lastmod>2025-04-17T05:55:11.510Z</lastmod>
+   <priority>0.80</priority>
+ </url>
   <url>
-    <loc>https://www.circuitikz-generator.xyz/instructions/</loc>
-    <lastmod>2025-04-13T17:39:04+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-
+   <loc>https://www.circuitikz-generator.xyz/instructions/</loc>
+   <lastmod>2025-04-17T05:55:11.510Z</lastmod>
+   <priority>0.80</priority>
+ </url>
 </urlset>
