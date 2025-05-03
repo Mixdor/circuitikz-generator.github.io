@@ -1,7 +1,8 @@
 ---
 interface Props {
-
+	subtitle:string;
 }
+const {subtitle} = Astro.props
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +19,7 @@ interface Props {
 	</g>
 </svg>
 <h1><span class="text-gradient">CircuiTikZ</span> Generator</h1>
-<h2>Design circuits in LaTeX quickly</h2>
+<h2>{subtitle}</h2>
 
 <style>
 	.astro-a {

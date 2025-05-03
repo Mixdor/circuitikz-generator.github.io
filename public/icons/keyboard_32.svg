@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="40px"
+   viewBox="0 -960 960 960"
+   width="40px"
+   fill="#e3e3e3"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="keyboard_32.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="13.275"
+     inkscape:cx="20"
+     inkscape:cy="20"
+     inkscape:window-width="1151"
+     inkscape:window-height="739"
+     inkscape:window-x="-2"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M146.67-200q-27 0-46.84-20.17Q80-240.33 80-266.67v-426.66q0-27 19.83-46.84Q119.67-760 146.67-760h666.66q27 0 46.84 19.83Q880-720.33 880-693.33v426.66q0 26.34-19.83 46.5Q840.33-200 813.33-200H146.67Zm160-123.33h346.66V-390H306.67v66.67ZM202-446.67h66.67v-66.66H202v66.66Zm122.67 0h66.66v-66.66h-66.66v66.66Zm122 0h66.66v-66.66h-66.66v66.66Zm122.66 0H636v-66.66h-66.67v66.66Zm122 0H758v-66.66h-66.67v66.66ZM202-570h66.67v-66.67H202V-570Zm122.67 0h66.66v-66.67h-66.66V-570Zm122 0h66.66v-66.67h-66.66V-570Zm122.66 0H636v-66.67h-66.67V-570Zm122 0H758v-66.67h-66.67V-570Z"
+     id="path1"
+     style="fill:#ffc89f;fill-opacity:1" />
+</svg>

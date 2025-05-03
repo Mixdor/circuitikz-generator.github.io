@@ -14,7 +14,7 @@ import Header from '../components/Header.astro'
 	description="Download the open-source tool for building electronic circuits in LaTeX, compatible with the CircuiTikZ library."
 	canononical="https://www.circuitikz-generator.xyz/">
 	<main>
-		<Header/>
+		<Header subtitle="Design circuits in LaTeX quickly"/>
 		
 		<div class="content-buttons">
 			<Button_Outline title="Donate" href="https://github.com/sponsors/Mixdor"/>
@@ -29,15 +29,15 @@ import Header from '../components/Header.astro'
 			<ul role="list" class="flex_content_download">
 				<ButtonDownload
 					title="Windows"
-					href="https://sourceforge.net/projects/circuitikz-generator/files/v0.8/Circuitikz-Generator-x86_64.exe/download"
+					href="https://github.com/Mixdor/CircuiTikZ-Generator/releases/download/v0.8/Circuitikz-Generator-x86_64.exe"
 					logo="/icons/windows_11.svg"/>
 				<ButtonDownload
 					title="AppImage"
-					href="https://sourceforge.net/projects/circuitikz-generator/files/v0.8/Circuitikz_Generator-x86_64.AppImage/download"
+					href="https://github.com/Mixdor/CircuiTikZ-Generator/releases/download/v0.8/Circuitikz_Generator-x86_64.AppImage"
 					logo="/icons/app_image.svg"/>
 				<ButtonDownload
 					title="Debian"
-					href="https://sourceforge.net/projects/circuitikz-generator/files/v0.8/Circuitikz-Generator-x86_64.deb/download"
+					href="https://github.com/Mixdor/CircuiTikZ-Generator/releases/download/v0.8/Circuitikz-Generator-x86_64.deb"
 					logo="/icons/debian.svg"/>
 			</ul>
 
@@ -68,24 +68,21 @@ import Header from '../components/Header.astro'
 				title="Components"
 				body="Resistors, Capacitors, Diodes, Transistors, Transformers, etc."
 				target=""
-			/>
-			<Card
-				href="/shortcuts"
-				title="Shortcuts"
-				body="List of integrated keyboard shortcuts."
-				target=""
+				colSpan=1
 			/>
 			<Card
 				href="/instructions"
 				title="Instructions"
 				body="Basic instructions for use."
 				target=""
+				colSpan=1
 			/>
 			<Card
 				href="https://github.com/Mixdor/CircuiTikZ-Generator"
 				title="Source"
 				body="Open source code, review or modify what you need."
 				target="_blank"
+				colSpan=2
 			/>
 		</ul>
 		

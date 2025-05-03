@@ -9,7 +9,7 @@ const { href, title} = Astro.props;
 
 <a class="button button-white" target="_blank" href={href}>
 	<div class="center-img-button">
-		<img src="https://storage.ko-fi.com/cdn/brandasset/kofi_s_logo_nolabel.png?_gl=1*18j5plg*_ga*ODE0OTQ3NTczLjE3MDc1OTA4NDQ.*_ga_M13FZ7VQ2C*MTcwNzc1NjYyOS41LjEuMTcwNzc1ODI2Ny40MC4wLjA." alt="icon Ko-fi">
+		<img src="/icons/favorite.svg" alt="Icon Donate">
 		<h3>{title}</h3>
 	</div>
 </a>
@@ -17,6 +17,7 @@ const { href, title} = Astro.props;
 <style>
 	.center-img-button {
 		display: flex;
+		gap: 0.5rem;
 	}
 
 	.link-button {

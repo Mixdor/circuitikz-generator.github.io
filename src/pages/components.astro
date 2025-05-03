@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro'
+import Component from '../components/Component.astro'
+import GroupComponent from '../components/GroupComponent.astro'
 ---
 
 <Layout 
@@ -8,171 +10,258 @@ import Header from '../components/Header.astro'
 	description="Explore the electronic components compatible with Circuitikz Generator."
 	canononical="https://www.circuitikz-generator.xyz/components/">
 	<main>
-		<Header/>
+		<Header subtitle="Components"/>
 
-		<div id="basic">
-			<h5><img src="/icons/traceable.svg" alt="Traceable components logo"> = Traceable</h5>
-			<h5><img src="/icons/no_traceable.svg" alt="Non-traceable components logo"> = No Traceable</h5>
+		<div id="guides">
+			<div class="guide">
+				<img src="/icons/traceable32.svg" alt="Traceable components logo">
+				<h5>Traceable</h5>
+			</div>
+			<div class="guide">
+				<img src="/icons/no_traceable32.svg" alt="Non-traceable components logo">
+				<h5>No Traceable</h5>
+			</div>
 		</div>
+
+		<p><br>The following list shows the electronic components supported by the tool:</p>
+
+		<GroupComponent name="Basic" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Wire" image="/icons/components/basic/Wire.svg"/>
+			<Component name="Crossings" image="/icons/components/basic/Crossings.svg"/>
+		</div>
+
 		
-
-		<div class="instructions">
-			<h2 class="category">Basic <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Wire</li>
-				<li class="traceable">Crossing Wire</li>
-			</ul>
-		</div>
-
-		<div class="instructions">
-			<h2 class="category">Terminal Shapes <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Connected</li>
-				<li class="traceable">Unconnected</li>
-				<li class="traceable">Unconnected</li>
-				<li class="traceable">Diamond</li>
-				<li class="traceable">Open Diamond</li>
-				<li class="traceable">Square</li>
-				<li class="traceable">Open Square</li>
-				<li class="traceable">Arrow</li>
-			</ul>
-		</div>
-
-		<div class="instructions">
-			<h2 class="category">Sources<span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Battery</li>
-				<li class="traceable">Battery 1</li>
-				<li class="traceable">Battery 2</li>
-				<li class="traceable">DC Voltage</li>
-				<li class="traceable">DC Current</li>
-				<li class="traceable">AC Voltage</li>
-				<li class="traceable">AC Current</li>
-				<li class="traceable">DC Controlled Voltage</li>
-				<li class="traceable">DC Controlled Current</li>
-				<li class="traceable">AC Controlled Voltage</li>
-				<li class="traceable">AC Controlled Current</li>
-				<li class="traceable">Square Voltage</li>
-				<li class="traceable">Triangle Voltage</li>
-			</ul>
-		</div>
+		<GroupComponent name="Terminal Shapes" image="/icons/traceable32.svg"/>
 		
-		<div class="instructions">
-			<h2 class="category">Resistors <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Resistor</li>
-			</ul>
+		<div class="category_content">	
+			<Component name="Connected" image="/icons/components/terminal_shapes/Circle.svg"/>
+			<Component name="Unconnected" image="/icons/components/terminal_shapes/Circle_Open.svg"/>
+			<Component name="Diamond" image="/icons/components/terminal_shapes/Diamond.svg"/>
+			<Component name="Open Diamond" image="/icons/components/terminal_shapes/Diamond_Open.svg"/>
+			<Component name="Square" image="/icons/components/terminal_shapes/Square.svg"/>
+			<Component name="Open Square" image="/icons/components/terminal_shapes/Square_Open.svg"/>
+			<Component name="Arrow" image="/icons/components/terminal_shapes/Arrow.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Inductors <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Inductor</li>
-			</ul>
+
+		<GroupComponent name="Sources" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Battery" image="/icons/components/sources/Battery.svg"/>
+			<Component name="Battery 1" image="/icons/components/sources/Battery_1.svg"/>
+			<Component name="Battery 2" image="/icons/components/sources/Battery_2.svg"/>
+			<Component name="DC Voltage" image="/icons/components/sources/Voltage_Source.svg"/>
+			<Component name="DC Current" image="/icons/components/sources/Current_Source.svg"/>
+			<Component name="AC Voltage" image="/icons/components/sources/SinusoidalVoltage.svg"/>
+			<Component name="AC Current" image="/icons/components/sources/SinusoidalCurrent.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Capacitors <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Capacitor</li>
-				<li class="traceable">Polarized Capacitor</li>
-				<li class="traceable">Electrolytic Capacitor</li>
-				<li class="traceable">Piezoelectric</li>
-			</ul>
+
+		<GroupComponent name="Controlled Sources" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="DC Controlled Voltage" image="/icons/components/controller_sources/ControlledVoltage.svg"/>
+			<Component name="DC Controlled Current" image="/icons/components/controller_sources/ControlledCurrent.svg"/>
+			<Component name="AC Controlled Voltage" image="/icons/components/controller_sources/ControlledSinusoidalVoltage.svg"/>
+			<Component name="AC Controlled Current" image="/icons/components/controller_sources/ControlledSinusoidalCurrent.svg"/>
+			<Component name="Empty Controlled Source" image="/icons/components/controller_sources/EmptyControlled.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Diodes <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Diode</li>
-				<li class="traceable">Schottky Diode</li>
-				<li class="traceable">Zener Diode</li>
-				<li class="traceable">ZZener Diode</li>
-				<li class="traceable">Tunnel Diode</li>
-				<li class="traceable">Photodiode</li>
-				<li class="traceable">Led</li>
-				<li class="traceable">Laser Diode</li>
-				<li class="traceable">Varcap</li>
-				<li class="traceable">Shockley Diode</li>
-				<li class="traceable">Bidirectional Diode</li>
-			</ul>
+
+		<GroupComponent name="DC Sources" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="DC Voltage" image="/icons/components/dc_sources/DC_Current.svg"/>
+			<Component name="DC Current" image="/icons/components/dc_sources/DC_Voltage.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Switches <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Switch</li>
-				<li class="traceable">Closing Switch</li>
-				<li class="traceable">Opening Switch</li>
-				<li class="traceable">Push Button</li>
-				<li class="traceable">Push Closed</li>
-			</ul>
+		<GroupComponent name="Special Sources" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">
+			<Component name="Noise Voltage" image="/icons/components/special_sources/Noise_Voltage.svg"/>
+			<Component name="Noise Current" image="/icons/components/special_sources/Noise_Current.svg"/>
+			<Component name="Square Voltage" image="/icons/components/special_sources/Square_Voltage.svg"/>
+			<Component name="Triangle Voltage" image="/icons/components/special_sources/Triangle_Voltage.svg"/>
+			<Component name="Empty Voltage" image="/icons/components/special_sources/Empty_Voltage.svg"/>
+			<Component name="Photovoltaic Current" image="/icons/components/special_sources/Photovoltaic_Voltage.svg"/>
+			<Component name="Double Zero style Current" image="/icons/components/special_sources/Double_Zero_Source.svg"/>
+			<Component name="Double Zero style Voltage" image="/icons/components/special_sources/Double_Zero_Source.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Transistors <span>&rarr;</span></h2>
-			<ul>
-				<li class="notraceable">NPN</li>
-				<li class="notraceable">PNP</li>
-				<li class="notraceable">Schottky NPN</li>
-				<li class="notraceable">Schottky PNP</li>
-				<li class="notraceable">Diode NPN</li>
-				<li class="notraceable">Diode PNP</li>
-				<li class="notraceable">Photo NPN</li>
-				<li class="notraceable">Photo PNP</li>
-				<li class="notraceable">Nigbt</li>
-				<li class="notraceable">Pigbt</li>
-				<li class="notraceable">NMOS</li>
-				<li class="notraceable">PMOS</li>
-				<li class="notraceable">NMOS Depletion</li>
-				<li class="notraceable">PMOS Depletion</li>
-				<li class="notraceable">Hemt</li>
-				<li class="notraceable">Hemt NoBase</li>
-				<li class="notraceable">NFET</li>
-				<li class="notraceable">PFET</li>
-				<li class="notraceable">NFET Depletion</li>
-				<li class="notraceable">PFET Depletion</li>
-			</ul>
+		<GroupComponent name="Nullator and Norator" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Nullator" image="/icons/components/nullator_norator/Nullator.svg"/>
+			<Component name="Norator" image="/icons/components/nullator_norator/Norator.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Grounds <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Ground</li>
-				<li class="traceable">Tailless</li>
-				<li class="traceable">Reference</li>
-				<li class="traceable">Signal</li>
-				<li class="traceable">Noiseless</li>
-				<li class="traceable">Protective</li>
-				<li class="traceable">Chassis</li>
-			</ul>
+		<GroupComponent name="Resistors" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Resistor" image="/icons/components/resistors/Resistor.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Power Supplies <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">VCC</li>
-				<li class="traceable">VEE</li>
-			</ul>
-		</div>
-		
-		<div class="instructions">
-			<h2 class="category">Transformers <span>&rarr;</span></h2>
-			<ul>
-				<li class="notraceable">Transformer</li>
-				<li class="notraceable">Gyrator</li>
-				<li class="notraceable">Transformer Core</li>
-			</ul>
+
+		<GroupComponent name="Inductors" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Inductor" image="/icons/components/inductors/Inductor.svg"/>
 		</div>
 
-		<div class="instructions">
-			<h2 class="category">Instruments <span>&rarr;</span></h2>
-			<ul>
-				<li class="traceable">Ammeter</li>
-				<li class="traceable">Voltmeter</li>
-				<li class="traceable">Ohmmeter</li>
-			</ul>
+
+		<GroupComponent name="Capacitors" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Capacitor" image="/icons/components/capacitors/Capacitor.svg"/>
+			<Component name="Polarized Capacitor" image="/icons/components/capacitors/Capacitor_Polarized.svg"/>
+			<Component name="Electrolytic Capacitor" image="/icons/components/capacitors/Capacitor_Electrolytic.svg"/>
+			<Component name="Piezoelectric" image="/icons/components/capacitors/Capacitor_Piezoelectric.svg"/>
 		</div>
+
+
+		<GroupComponent name="Diodes" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">
+
+			<Component name="Diode" image="/icons/components/diodes/Diode.svg"/>
+			<Component name="Schottky Diode" image="/icons/components/diodes/Diode_Schottky.svg"/>
+			<Component name="Zener Diode" image="/icons/components/diodes/Diode_Zener.svg"/>
+			<Component name="ZZener Diode" image="/icons/components/diodes/Diode_ZZener.svg"/>
+			<Component name="Tunnel Diode" image="/icons/components/diodes/Diode_Tunnel.svg"/>
+			<Component name="Photodiode" image="/icons/components/diodes/Diode_Photo.svg"/>
+			<Component name="Led" image="/icons/components/diodes/Diode_Led.svg"/>
+			<Component name="Laser Diode" image="/icons/components/diodes/Diode_Laser.svg"/>
+			<Component name="Varcap" image="/icons/components/diodes/Diode_Varcap.svg"/>
+			<Component name="TVS Diode" image="/icons/components/diodes/Diode_TVS.svg"/>
+			<Component name="Shockley Diode" image="/icons/components/diodes/Diode_Shockley.svg"/>
+			<Component name="Bidirectional Diode" image="/icons/components/diodes/Diode_Bidirectional.svg"/>
+			
+		</div>
+
+
+		<GroupComponent name="Switches" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Switch" image="/icons/components/switches/Switch_Open.svg"/>
+			<Component name="Closing Switch" image="/icons/components/switches/Switch_Closing.svg"/>
+			<Component name="Opening Switch" image="/icons/components/switches/Switch_Opening.svg"/>
+			<Component name="Push Button" image="/icons/components/switches/Push.svg"/>
+			<Component name="Push Closed" image="/icons/components/switches/Push_Closed.svg"/>
+		</div>
+
+
+		<GroupComponent name="Transistors" image="/icons/no_traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="NPN" image="/icons/components/transistors/NPN.svg"/>
+			<Component name="PNP" image="/icons/components/transistors/PNP.svg"/>
+			<Component name="Schottky NPN" image="/icons/components/transistors/NPN_Schottky.svg"/>
+			<Component name="Schottky PNP" image="/icons/components/transistors/PNP_Schottky.svg"/>
+			<Component name="Diode NPN" image="/icons/components/transistors/NPN_Diode.svg"/>
+			<Component name="Diode PNP" image="/icons/components/transistors/PNP_Diode.svg"/>
+			<Component name="Photo NPN" image="/icons/components/transistors/NPN_Photo.svg"/>
+			<Component name="Photo PNP" image="/icons/components/transistors/PNP_Photo.svg"/>
+			<Component name="Nigbt" image="/icons/components/transistors/NPN_Nigbt.svg"/>
+			<Component name="Pigbt" image="/icons/components/transistors/PNP_Pigbt.svg"/>
+			<Component name="NMOS" image="/icons/components/transistors/Nmos.svg"/>
+			<Component name="PMOS" image="/icons/components/transistors/Pmos.svg"/>
+			<Component name="NMOS Depletion" image="/icons/components/transistors/Nmos_Depletion.svg"/>
+			<Component name="PMOS Depletion" image="/icons/components/transistors/Pmos_Depletion.svg"/>
+			<Component name="Hemt" image="/icons/components/transistors/Hemt.svg"/>
+			<Component name="Hemt NoBase" image="/icons/components/transistors/Hemt_Nobase.svg"/>
+			<Component name="NFET" image="/icons/components/transistors/Nfet.svg"/>
+			<Component name="PFET" image="/icons/components/transistors/Pfet.svg"/>
+			<Component name="NFET Depletion" image="/icons/components/transistors/Nfet_Depletion.svg"/>
+			<Component name="PFET Depletion" image="/icons/components/transistors/Pfet_Depletion.svg"/>
+		</div>
+
+
+		<GroupComponent name="Grounds" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Ground" image="/icons/components/grounds/Ground_Earth.svg"/>
+			<Component name="Tailless" image="/icons/components/grounds/Ground_Tailless.svg"/>
+			<Component name="Reference" image="/icons/components/grounds/Ground_Reference.svg"/>
+			<Component name="Signal" image="/icons/components/grounds/Ground_Signal.svg"/>
+			<Component name="Noiseless" image="/icons/components/grounds/Ground_Noiseles.svg"/>
+			<Component name="Protective" image="/icons/components/grounds/Ground_Protective.svg"/>
+			<Component name="Chassis" image="/icons/components/grounds/Ground_Chassis.svg"/>
+		</div>
+
+
+		<GroupComponent name="Power Supplies" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="VCC" image="/icons/components/power_supplies/Supplies_VCC.svg"/>
+			<Component name="VEE" image="/icons/components/power_supplies/Supplies_VEE.svg"/>
+		</div>
+
+
+		<GroupComponent name="Transformers" image="/icons/no_traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Transformer" image="/icons/components/transformers/Transformer.svg"/>
+			<Component name="Gyrator" image="/icons/components/transformers/Gyrator.svg"/>
+			<Component name="Transformer Core" image="/icons/components/transformers/Transformer_Core.svg"/>
+		</div>
+
+
+		<GroupComponent name="Amplifiers" image="/icons/no_traceable32.svg"/>
+
+		<div class="category_content">	
+			<Component name="Operational Amplifier" image="/icons/components/amplifiers/Amplifier.svg"/>
+		</div>
+
+
+		<GroupComponent name="Instruments" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">
+			<Component name="Ammeter" image="/icons/components/instruments/Ammeter.svg"/>
+			<Component name="Voltmeter" image="/icons/components/instruments/Voltmeter.svg"/>
+			<Component name="Ohmmeter" image="/icons/components/instruments/Ohmmeter.svg"/>
+			<Component name="Square Meter" image="/icons/components/instruments/Square_Meter.svg"/>
+			<Component name="Ramp Oscilloscope" image="/icons/components/instruments/Oscilloscope_Ramps.svg"/>
+			<Component name="Sin Oscilloscope" image="/icons/components/instruments/Oscilloscope_Sin.svg"/>
+			<Component name="Square Oscilloscope" image="/icons/components/instruments/Oscilloscope_Square.svg"/>
+			<Component name="Triangle Oscilloscope" image="/icons/components/instruments/Oscilloscope_Triangles.svg"/>
+			<Component name="Lissajous Oscilloscope" image="/icons/components/instruments/Oscilloscope_Lissajous.svg"/>
+			<Component name="Zero Oscilloscope" image="/icons/components/instruments/Oscilloscope_Zero.svg"/>
+			<Component name="None Oscilloscope" image="/icons/components/instruments/Oscilloscope_None.svg"/>
+			<Component name="Current Loop" image="/icons/components/instruments/Current_Loop.svg"/>
+		</div>
+
+
+		<GroupComponent name="Mechanical Analogy" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">
+			<Component name="Mechanical Damping" image="/icons/components/mechanical_analogy/Damping.svg"/>
+			<Component name="Mechanical Inerter" image="/icons/components/mechanical_analogy/Inerter.svg"/>
+			<Component name="Mechanical Stiffness" image="/icons/components/mechanical_analogy/Stiffness.svg"/>
+			<Component name="Mechanical Viscoelastic" image="/icons/components/mechanical_analogy/Viscoelastic.svg"/>
+			<Component name="Mechanical Mass" image="/icons/components/mechanical_analogy/Mass.svg"/>
+		</div>
+
+
+		<GroupComponent name="Other Bipoles" image="/icons/traceable32.svg"/>
+
+		<div class="category_content">
+			<Component name="Thermocouple" image="/icons/components/other_bipoles/Thermocouple.svg"/>
+			<Component name="Fuse" image="/icons/components/other_bipoles/Fuse.svg"/>
+			<Component name="Asymmetric Fuse" image="/icons/components/other_bipoles/Asymmetric_Fuse.svg"/>
+			<Component name="Squid" image="/icons/components/other_bipoles/Squid.svg"/>
+			<Component name="Barrier" image="/icons/components/other_bipoles/Barrier.svg"/>
+			<Component name="Open Barrier" image="/icons/components/other_bipoles/Open_Barrier.svg"/>
+			<Component name="Gas" image="/icons/components/other_bipoles/Gas.svg"/>
+			<Component name="Lamp" image="/icons/components/other_bipoles/Lamp.svg"/>
+			<Component name="Bulb" image="/icons/components/other_bipoles/Bulb.svg"/>
+			<Component name="LoudSpeaker" image="/icons/components/other_bipoles/LoudSpeaker.svg"/>
+			<Component name="Mic" image="/icons/components/other_bipoles/Mic.svg"/>
+			<Component name="Buzzer" image="/icons/components/other_bipoles/Buzzer.svg"/>
+			<Component name="Reversed Buzzer" image="/icons/components/other_bipoles/Reversed_Buzzer.svg"/>
+		</div>
+
 
 	</main>
 
@@ -195,10 +284,10 @@ import Header from '../components/Header.astro'
 	h5 {
 		text-align: left;
 	}
-	.category {
-		margin: 0rem 0rem 0.5rem 0rem;
-		font-size: 110%;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	.category_content{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(145px, 145px));
+		gap: 1rem;
 	}
 	.shortcut {
 		color: black;
@@ -223,10 +312,10 @@ import Header from '../components/Header.astro'
 		font-size: 90%;
 	}
 	.traceable {
-	    list-style-image: url(/icons/traceable.svg);
+		/*list-style-image: url(/icons/traceable.svg);*/
 	}
 	.notraceable {
-	    list-style-image: url(/icons/no_traceable.svg);
+	    /*list-style-image: url(/icons/no_traceable.svg);*/
 	}
 	.instructions:is(:hover, :focus-within) {
 		border-color: rgb(var(--accent-light));
@@ -234,7 +323,24 @@ import Header from '../components/Header.astro'
 	.instructions:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
-	#basic {
-		margin-top: 4rem;
+	#guides {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 1rem;
 	}
+	.guide{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.guide img{
+		width: 24px;
+		height: 24px;
+	}
+	.guide h5{
+		margin: 0;
+	}
+	
 </style>

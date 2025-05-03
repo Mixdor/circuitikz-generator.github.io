@@ -8,7 +8,7 @@ import Header from '../components/Header.astro'
 	description="Learn how to use Circuitikz Generator step by step. Discover how to easily create, edit, and export electronic circuits in LaTeX."
 	canononical="https://www.circuitikz-generator.xyz/instructions/">
 	<main>
-		<Header/>
+		<Header subtitle="Instructions"/>
 		
 		<div id="basic">
 			<div>
@@ -24,7 +24,7 @@ import Header from '../components/Header.astro'
 				<p>This functionality allows you to create visual connections between positions by dragging the component from its original location to the new one, and the desired component will be created in the center.</p>
 			</div>
 			<div>
-				<img id="img_no_traceable" src="/icons/no_traceable32.svg" alt="Non-traceable components logo">
+				<img class="img_space" src="/icons/no_traceable32.svg" alt="Non-traceable components logo">
 				<h4>No Traceable</h4>
 				<p>These components are placed directly at the position where you click, without the need to drag. Follow these simple steps:</p>
 				<ol>
@@ -32,7 +32,17 @@ import Header from '../components/Header.astro'
 					<li>It will be instantly positioned at the click location, without the need to drag.</li>
 				</ol>
 			</div>
-			
+			<div>
+				<img class="img_space" src="/icons/keyboard_32.svg" alt="Non-traceable components logo">
+				<h4>Shortcuts</h4>
+				<div class="instructions">
+					<p>Undo: &nbsp;<kbd class="shortcut">Ctrl</kbd> + <kbd class="shortcut">Z</kbd></p>
+					<p>Redo: &nbsp;<kbd class="shortcut">Ctrl</kbd> + <kbd class="shortcut">Shift</kbd> + <kbd class="shortcut">Z</kbd></p>
+					<p>Zoom in: &nbsp;<kbd class="shortcut">WheelUp</kbd></p>
+					<p>Zoom out: &nbsp;<kbd class="shortcut">WheelDown</kbd></p>
+					<p>Drag workspace: &nbsp;<kbd class="shortcut">Space</kbd> + <kbd class="shortcut">Draging</kbd></p>
+				</div>
+			</div>
 		</div>
 		
 	</main>
@@ -62,10 +72,21 @@ import Header from '../components/Header.astro'
 	li {
 		font-size: 90%;
 	}
+	.shortcut {
+		color: black;
+		font-size: 80%;
+		font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
+		background-color: #e6c1a8;
+		border: 1px solid #ad8b71;
+		border-radius: 4px;
+		box-shadow: 0 2px #ad8b71;
+		padding: 4px 6px 0px 6px;
+		margin: auto 0;
+	}
+	.img_space {
+		margin-top: 2rem;
+	}
 	#basic {
 		margin-top: 4rem;
-	}
-	#img_no_traceable {
-		margin-top: 2rem;
 	}
 </style>

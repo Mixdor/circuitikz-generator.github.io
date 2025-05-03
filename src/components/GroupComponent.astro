@@ -1,0 +1,30 @@
+---
+interface Props {
+	name:string;
+	image:string;
+}
+const {name, image} = Astro.props
+---
+
+<div id="content">
+	<h2 class="category">{name}</h2>
+	<img src={image}>
+</div>
+
+<style>
+	.category {
+		margin: 0;
+		font-size: 110%;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	#content {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin: 2rem 0rem 1.5rem 0rem;
+	}
+	#content img {
+		width: 24px;
+		height: 24px;
+	}
+</style>
