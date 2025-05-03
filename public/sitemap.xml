@@ -2,22 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.circuitikz-generator.xyz/</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-05-03</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.circuitikz-generator.xyz/components/</loc>
-    <lastmod>2025-04-17</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.circuitikz-generator.xyz/shortcuts/</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-05-03</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.circuitikz-generator.xyz/instructions/</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-05-03</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>
