@@ -62,29 +62,26 @@ import Header from '../components/Header.astro'
 		
 		<!-- End SF Tag -->
 
-		<ul role="list" class="link-card-grid">
+		<ul role="list" class="link_card_grid">
 			<Card
 				href="/components"
 				title="Components"
 				body="Resistors, Capacitors, Diodes, Transistors, Transformers, etc."
 				target=""
-				colSpan=1
 			/>
 			<Card
 				href="/instructions"
 				title="Instructions"
 				body="Basic instructions for use."
 				target=""
-				colSpan=1
-			/>
-			<Card
-				href="https://github.com/Mixdor/CircuiTikZ-Generator"
-				title="Source"
-				body="Open source code, review or modify what you need."
-				target="_blank"
-				colSpan=2
 			/>
 		</ul>
+		<Card
+			href="https://github.com/Mixdor/CircuiTikZ-Generator"
+			title="Source"
+			body="Open source code, review or modify what you need."
+			target="_blank"
+		/>
 		
 		<Carrusel
 			srcs={["/Screenshots/circuitikz1.webp","/Screenshots/circuitikz2.webp","/Screenshots/circuitikz3.webp","/Screenshots/circuitikz4.webp"]}
@@ -142,11 +139,12 @@ import Header from '../components/Header.astro'
 		margin: 0;
 		gap: 1rem;
 	}
-	.link-card-grid {
+	.link_card_grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+		margin-bottom: 2rem;
 	}
 	.sf-achivements {
 		display: flex;

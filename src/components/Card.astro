@@ -6,10 +6,10 @@ interface Props {
 	target: string;
 }
 
-const { href, title, body, target, colSpan } = Astro.props;
+const { href, title, body, target, n_grid } = Astro.props;
 ---
 
-<li class="link-card" style={`--col-span: ${colSpan}`}>
+<li class="link-card">
 	<a href={href} target={target}>
 		<h2>
 			{title}
